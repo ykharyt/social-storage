@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A03702891E0E77A300B0A249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702881E0E77A300B0A249 /* main.m */; };
+		A037028C1E0E77A300B0A249 /* YKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A037028B1E0E77A300B0A249 /* YKAppDelegate.m */; };
+		A037028F1E0E77A300B0A249 /* YKSocialNetworkPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A037028E1E0E77A300B0A249 /* YKSocialNetworkPicker.m */; };
+		A03702921E0E77A300B0A249 /* YKSocialNetworkList.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702911E0E77A300B0A249 /* YKSocialNetworkList.m */; };
+		A03702951E0E77A300B0A249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03702931E0E77A300B0A249 /* Main.storyboard */; };
+		A03702971E0E77A300B0A249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03702961E0E77A300B0A249 /* Assets.xcassets */; };
+		A037029A1E0E77A300B0A249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03702981E0E77A300B0A249 /* LaunchScreen.storyboard */; };
+		A03702A51E0E77A300B0A249 /* SocialStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702A41E0E77A300B0A249 /* SocialStorageTests.m */; };
+		A03702B01E0E77A300B0A249 /* SocialStorageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702AF1E0E77A300B0A249 /* SocialStorageUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A03702A11E0E77A300B0A249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A037027C1E0E77A200B0A249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03702831E0E77A300B0A249;
+			remoteInfo = SocialStorage;
+		};
+		A03702AC1E0E77A300B0A249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A037027C1E0E77A200B0A249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03702831E0E77A300B0A249;
+			remoteInfo = SocialStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A03702841E0E77A300B0A249 /* SocialStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03702881E0E77A300B0A249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A037028A1E0E77A300B0A249 /* YKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKAppDelegate.h; sourceTree = "<group>"; };
+		A037028B1E0E77A300B0A249 /* YKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKAppDelegate.m; sourceTree = "<group>"; };
+		A037028D1E0E77A300B0A249 /* YKSocialNetworkPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKSocialNetworkPicker.h; sourceTree = "<group>"; };
+		A037028E1E0E77A300B0A249 /* YKSocialNetworkPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKSocialNetworkPicker.m; sourceTree = "<group>"; };
+		A03702901E0E77A300B0A249 /* YKSocialNetworkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKSocialNetworkList.h; sourceTree = "<group>"; };
+		A03702911E0E77A300B0A249 /* YKSocialNetworkList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKSocialNetworkList.m; sourceTree = "<group>"; };
+		A03702941E0E77A300B0A249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A03702961E0E77A300B0A249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A03702991E0E77A300B0A249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A037029B1E0E77A300B0A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03702A01E0E77A300B0A249 /* SocialStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03702A41E0E77A300B0A249 /* SocialStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialStorageTests.m; sourceTree = "<group>"; };
+		A03702A61E0E77A300B0A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03702AB1E0E77A300B0A249 /* SocialStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03702AF1E0E77A300B0A249 /* SocialStorageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialStorageUITests.m; sourceTree = "<group>"; };
+		A03702B11E0E77A300B0A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A03702811E0E77A300B0A249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A037029D1E0E77A300B0A249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03702A81E0E77A300B0A249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A037027B1E0E77A200B0A249 = {
+			isa = PBXGroup;
+			children = (
+				A03702861E0E77A300B0A249 /* SocialStorage */,
+				A03702A31E0E77A300B0A249 /* SocialStorageTests */,
+				A03702AE1E0E77A300B0A249 /* SocialStorageUITests */,
+				A03702851E0E77A300B0A249 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A03702851E0E77A300B0A249 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A03702841E0E77A300B0A249 /* SocialStorage.app */,
+				A03702A01E0E77A300B0A249 /* SocialStorageTests.xctest */,
+				A03702AB1E0E77A300B0A249 /* SocialStorageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A03702861E0E77A300B0A249 /* SocialStorage */ = {
+			isa = PBXGroup;
+			children = (
+				A037028A1E0E77A300B0A249 /* YKAppDelegate.h */,
+				A037028B1E0E77A300B0A249 /* YKAppDelegate.m */,
+				A037028D1E0E77A300B0A249 /* YKSocialNetworkPicker.h */,
+				A037028E1E0E77A300B0A249 /* YKSocialNetworkPicker.m */,
+				A03702901E0E77A300B0A249 /* YKSocialNetworkList.h */,
+				A03702911E0E77A300B0A249 /* YKSocialNetworkList.m */,
+				A03702931E0E77A300B0A249 /* Main.storyboard */,
+				A03702961E0E77A300B0A249 /* Assets.xcassets */,
+				A03702981E0E77A300B0A249 /* LaunchScreen.storyboard */,
+				A037029B1E0E77A300B0A249 /* Info.plist */,
+				A03702871E0E77A300B0A249 /* Supporting Files */,
+			);
+			path = SocialStorage;
+			sourceTree = "<group>";
+		};
+		A03702871E0E77A300B0A249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A03702881E0E77A300B0A249 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A03702A31E0E77A300B0A249 /* SocialStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				A03702A41E0E77A300B0A249 /* SocialStorageTests.m */,
+				A03702A61E0E77A300B0A249 /* Info.plist */,
+			);
+			path = SocialStorageTests;
+			sourceTree = "<group>";
+		};
+		A03702AE1E0E77A300B0A249 /* SocialStorageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A03702AF1E0E77A300B0A249 /* SocialStorageUITests.m */,
+				A03702B11E0E77A300B0A249 /* Info.plist */,
+			);
+			path = SocialStorageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A03702831E0E77A300B0A249 /* SocialStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03702B41E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorage" */;
+			buildPhases = (
+				A03702801E0E77A300B0A249 /* Sources */,
+				A03702811E0E77A300B0A249 /* Frameworks */,
+				A03702821E0E77A300B0A249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialStorage;
+			productName = SocialStorage;
+			productReference = A03702841E0E77A300B0A249 /* SocialStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A037029F1E0E77A300B0A249 /* SocialStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03702B71E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorageTests" */;
+			buildPhases = (
+				A037029C1E0E77A300B0A249 /* Sources */,
+				A037029D1E0E77A300B0A249 /* Frameworks */,
+				A037029E1E0E77A300B0A249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03702A21E0E77A300B0A249 /* PBXTargetDependency */,
+			);
+			name = SocialStorageTests;
+			productName = SocialStorageTests;
+			productReference = A03702A01E0E77A300B0A249 /* SocialStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A03702AA1E0E77A300B0A249 /* SocialStorageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03702BA1E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorageUITests" */;
+			buildPhases = (
+				A03702A71E0E77A300B0A249 /* Sources */,
+				A03702A81E0E77A300B0A249 /* Frameworks */,
+				A03702A91E0E77A300B0A249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03702AD1E0E77A300B0A249 /* PBXTargetDependency */,
+			);
+			name = SocialStorageUITests;
+			productName = SocialStorageUITests;
+			productReference = A03702AB1E0E77A300B0A249 /* SocialStorageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A037027C1E0E77A200B0A249 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Yevhen Kharytonenko";
+				TargetAttributes = {
+					A03702831E0E77A300B0A249 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					A037029F1E0E77A300B0A249 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A03702831E0E77A300B0A249;
+					};
+					A03702AA1E0E77A300B0A249 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A03702831E0E77A300B0A249;
+					};
+				};
+			};
+			buildConfigurationList = A037027F1E0E77A200B0A249 /* Build configuration list for PBXProject "SocialStorage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A037027B1E0E77A200B0A249;
+			productRefGroup = A03702851E0E77A300B0A249 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A03702831E0E77A300B0A249 /* SocialStorage */,
+				A037029F1E0E77A300B0A249 /* SocialStorageTests */,
+				A03702AA1E0E77A300B0A249 /* SocialStorageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A03702821E0E77A300B0A249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A037029A1E0E77A300B0A249 /* LaunchScreen.storyboard in Resources */,
+				A03702971E0E77A300B0A249 /* Assets.xcassets in Resources */,
+				A03702951E0E77A300B0A249 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A037029E1E0E77A300B0A249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03702A91E0E77A300B0A249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A03702801E0E77A300B0A249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03702921E0E77A300B0A249 /* YKSocialNetworkList.m in Sources */,
+				A037028C1E0E77A300B0A249 /* YKAppDelegate.m in Sources */,
+				A037028F1E0E77A300B0A249 /* YKSocialNetworkPicker.m in Sources */,
+				A03702891E0E77A300B0A249 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A037029C1E0E77A300B0A249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03702A51E0E77A300B0A249 /* SocialStorageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03702A71E0E77A300B0A249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03702B01E0E77A300B0A249 /* SocialStorageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A03702A21E0E77A300B0A249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03702831E0E77A300B0A249 /* SocialStorage */;
+			targetProxy = A03702A11E0E77A300B0A249 /* PBXContainerItemProxy */;
+		};
+		A03702AD1E0E77A300B0A249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03702831E0E77A300B0A249 /* SocialStorage */;
+			targetProxy = A03702AC1E0E77A300B0A249 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A03702931E0E77A300B0A249 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A03702941E0E77A300B0A249 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A03702981E0E77A300B0A249 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A03702991E0E77A300B0A249 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A03702B21E0E77A300B0A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A03702B31E0E77A300B0A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A03702B51E0E77A300B0A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SocialStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YK.SocialStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A03702B61E0E77A300B0A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SocialStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YK.SocialStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A03702B81E0E77A300B0A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocialStorageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YK.SocialStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialStorage.app/SocialStorage";
+			};
+			name = Debug;
+		};
+		A03702B91E0E77A300B0A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocialStorageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YK.SocialStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialStorage.app/SocialStorage";
+			};
+			name = Release;
+		};
+		A03702BB1E0E77A300B0A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SocialStorageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YK.SocialStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SocialStorage;
+			};
+			name = Debug;
+		};
+		A03702BC1E0E77A300B0A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SocialStorageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YK.SocialStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SocialStorage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A037027F1E0E77A200B0A249 /* Build configuration list for PBXProject "SocialStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03702B21E0E77A300B0A249 /* Debug */,
+				A03702B31E0E77A300B0A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03702B41E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03702B51E0E77A300B0A249 /* Debug */,
+				A03702B61E0E77A300B0A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A03702B71E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03702B81E0E77A300B0A249 /* Debug */,
+				A03702B91E0E77A300B0A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A03702BA1E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03702BB1E0E77A300B0A249 /* Debug */,
+				A03702BC1E0E77A300B0A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A037027C1E0E77A200B0A249 /* Project object */;
+}
