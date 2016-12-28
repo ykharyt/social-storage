@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  YKSocialNetworkPickerViewController.h
 //  SocialStorage
 //
 //  Created by Yevhen Kharytonenko on 12/24/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YKSocialNetworkPicker : UIViewController
+@interface YKSocialNetworkPickerViewController : UIViewController
 
 
 @end

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4429968211CCCF8F1E5DF9E1 /* libPods-SocialStorageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */; };
+		A02E5C861E13D68800B41327 /* YKSocialNetworkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E5C831E13D68800B41327 /* YKSocialNetworkListViewController.m */; };
+		A02E5C871E13D68800B41327 /* YKSocialNetworkPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E5C851E13D68800B41327 /* YKSocialNetworkPickerViewController.m */; };
+		A02E5C8B1E13D91D00B41327 /* SocialNetworks.plist in Resources */ = {isa = PBXBuildFile; fileRef = A02E5C8A1E13D91D00B41327 /* SocialNetworks.plist */; };
 		A03702891E0E77A300B0A249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702881E0E77A300B0A249 /* main.m */; };
 		A037028C1E0E77A300B0A249 /* YKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A037028B1E0E77A300B0A249 /* YKAppDelegate.m */; };
-		A037028F1E0E77A300B0A249 /* YKSocialNetworkPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A037028E1E0E77A300B0A249 /* YKSocialNetworkPicker.m */; };
-		A03702921E0E77A300B0A249 /* YKSocialNetworkList.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702911E0E77A300B0A249 /* YKSocialNetworkList.m */; };
 		A03702951E0E77A300B0A249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03702931E0E77A300B0A249 /* Main.storyboard */; };
 		A03702971E0E77A300B0A249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03702961E0E77A300B0A249 /* Assets.xcassets */; };
 		A037029A1E0E77A300B0A249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03702981E0E77A300B0A249 /* LaunchScreen.storyboard */; };
 		A03702A51E0E77A300B0A249 /* SocialStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702A41E0E77A300B0A249 /* SocialStorageTests.m */; };
 		A03702B01E0E77A300B0A249 /* SocialStorageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702AF1E0E77A300B0A249 /* SocialStorageUITests.m */; };
+		A9D7BD3497A9EEF146BBB9AA /* libPods-SocialStorageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2A30C42ED6F788EEA51C16 /* libPods-SocialStorageTests.a */; };
+		F9A41E4ABB4220A2107AB508 /* libPods-SocialStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C6FF4B96A5CE0D942B3D04 /* libPods-SocialStorage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +40,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5079B249C6C57F04899B45 /* Pods-SocialStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorage.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorage/Pods-SocialStorage.release.xcconfig"; sourceTree = "<group>"; };
+		20C6FF4B96A5CE0D942B3D04 /* libPods-SocialStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2678669AF501D85E336B9F11 /* Pods-SocialStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageTests/Pods-SocialStorageTests.release.xcconfig"; sourceTree = "<group>"; };
+		355128658032E90388BCC87C /* Pods-SocialStorageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageUITests/Pods-SocialStorageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6B2A30C42ED6F788EEA51C16 /* libPods-SocialStorageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8B2F3175C59E39EEB4131E /* Pods-SocialStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageTests/Pods-SocialStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B98849F65EDEA23922A9635 /* Pods-SocialStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorage/Pods-SocialStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		A02E5C821E13D68800B41327 /* YKSocialNetworkListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkListViewController.h; path = "View Controllers/YKSocialNetworkListViewController.h"; sourceTree = "<group>"; };
+		A02E5C831E13D68800B41327 /* YKSocialNetworkListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkListViewController.m; path = "View Controllers/YKSocialNetworkListViewController.m"; sourceTree = "<group>"; };
+		A02E5C841E13D68800B41327 /* YKSocialNetworkPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkPickerViewController.h; path = "View Controllers/YKSocialNetworkPickerViewController.h"; sourceTree = "<group>"; };
+		A02E5C851E13D68800B41327 /* YKSocialNetworkPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkPickerViewController.m; path = "View Controllers/YKSocialNetworkPickerViewController.m"; sourceTree = "<group>"; };
+		A02E5C8A1E13D91D00B41327 /* SocialNetworks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SocialNetworks.plist; sourceTree = "<group>"; };
 		A03702841E0E77A300B0A249 /* SocialStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03702881E0E77A300B0A249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A037028A1E0E77A300B0A249 /* YKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKAppDelegate.h; sourceTree = "<group>"; };
 		A037028B1E0E77A300B0A249 /* YKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKAppDelegate.m; sourceTree = "<group>"; };
-		A037028D1E0E77A300B0A249 /* YKSocialNetworkPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKSocialNetworkPicker.h; sourceTree = "<group>"; };
-		A037028E1E0E77A300B0A249 /* YKSocialNetworkPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKSocialNetworkPicker.m; sourceTree = "<group>"; };
-		A03702901E0E77A300B0A249 /* YKSocialNetworkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKSocialNetworkList.h; sourceTree = "<group>"; };
-		A03702911E0E77A300B0A249 /* YKSocialNetworkList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKSocialNetworkList.m; sourceTree = "<group>"; };
 		A03702941E0E77A300B0A249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A03702961E0E77A300B0A249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A03702991E0E77A300B0A249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +66,8 @@
 		A03702AB1E0E77A300B0A249 /* SocialStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03702AF1E0E77A300B0A249 /* SocialStorageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialStorageUITests.m; sourceTree = "<group>"; };
 		A03702B11E0E77A300B0A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BC195851DDF48ACB43088A /* Pods-SocialStorageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageUITests/Pods-SocialStorageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A41E4ABB4220A2107AB508 /* libPods-SocialStorage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D7BD3497A9EEF146BBB9AA /* libPods-SocialStorageTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +91,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4429968211CCCF8F1E5DF9E1 /* libPods-SocialStorageUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24A50B1615176338A326F6A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20C6FF4B96A5CE0D942B3D04 /* libPods-SocialStorage.a */,
+				6B2A30C42ED6F788EEA51C16 /* libPods-SocialStorageTests.a */,
+				B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4672610963424DAB14432FA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B98849F65EDEA23922A9635 /* Pods-SocialStorage.debug.xcconfig */,
+				0A5079B249C6C57F04899B45 /* Pods-SocialStorage.release.xcconfig */,
+				6B8B2F3175C59E39EEB4131E /* Pods-SocialStorageTests.debug.xcconfig */,
+				2678669AF501D85E336B9F11 /* Pods-SocialStorageTests.release.xcconfig */,
+				A6BC195851DDF48ACB43088A /* Pods-SocialStorageUITests.debug.xcconfig */,
+				355128658032E90388BCC87C /* Pods-SocialStorageUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A02E5C811E13D66F00B41327 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A02E5C821E13D68800B41327 /* YKSocialNetworkListViewController.h */,
+				A02E5C831E13D68800B41327 /* YKSocialNetworkListViewController.m */,
+				A02E5C841E13D68800B41327 /* YKSocialNetworkPickerViewController.h */,
+				A02E5C851E13D68800B41327 /* YKSocialNetworkPickerViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A02E5C881E13D6A100B41327 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
 		A037027B1E0E77A200B0A249 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +146,8 @@
 				A03702A31E0E77A300B0A249 /* SocialStorageTests */,
 				A03702AE1E0E77A300B0A249 /* SocialStorageUITests */,
 				A03702851E0E77A300B0A249 /* Products */,
+				4672610963424DAB14432FA6 /* Pods */,
+				24A50B1615176338A326F6A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,14 +166,13 @@
 			children = (
 				A037028A1E0E77A300B0A249 /* YKAppDelegate.h */,
 				A037028B1E0E77A300B0A249 /* YKAppDelegate.m */,
-				A037028D1E0E77A300B0A249 /* YKSocialNetworkPicker.h */,
-				A037028E1E0E77A300B0A249 /* YKSocialNetworkPicker.m */,
-				A03702901E0E77A300B0A249 /* YKSocialNetworkList.h */,
-				A03702911E0E77A300B0A249 /* YKSocialNetworkList.m */,
+				A02E5C881E13D6A100B41327 /* Data Models */,
+				A02E5C811E13D66F00B41327 /* View Controllers */,
 				A03702931E0E77A300B0A249 /* Main.storyboard */,
 				A03702961E0E77A300B0A249 /* Assets.xcassets */,
 				A03702981E0E77A300B0A249 /* LaunchScreen.storyboard */,
 				A037029B1E0E77A300B0A249 /* Info.plist */,
+				A02E5C8A1E13D91D00B41327 /* SocialNetworks.plist */,
 				A03702871E0E77A300B0A249 /* Supporting Files */,
 			);
 			path = SocialStorage;
@@ -152,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A03702B41E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorage" */;
 			buildPhases = (
+				B03433F7C1A04D1CCA53447B /* [CP] Check Pods Manifest.lock */,
 				A03702801E0E77A300B0A249 /* Sources */,
 				A03702811E0E77A300B0A249 /* Frameworks */,
 				A03702821E0E77A300B0A249 /* Resources */,
+				CCBB47F081230D9064D5CD24 /* [CP] Embed Pods Frameworks */,
+				585FA5E9D034CC70A651079E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A03702B71E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorageTests" */;
 			buildPhases = (
+				88C67FC9D2168011BDC19A57 /* [CP] Check Pods Manifest.lock */,
 				A037029C1E0E77A300B0A249 /* Sources */,
 				A037029D1E0E77A300B0A249 /* Frameworks */,
 				A037029E1E0E77A300B0A249 /* Resources */,
+				0007EA9171E700CBF75B8AE2 /* [CP] Embed Pods Frameworks */,
+				7C779F2AE3DD0CF0CDE92BBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A03702BA1E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorageUITests" */;
 			buildPhases = (
+				46D79E40ED8B681890C32E24 /* [CP] Check Pods Manifest.lock */,
 				A03702A71E0E77A300B0A249 /* Sources */,
 				A03702A81E0E77A300B0A249 /* Frameworks */,
 				A03702A91E0E77A300B0A249 /* Resources */,
+				3D1AE83873BF06FB027D7ED4 /* [CP] Embed Pods Frameworks */,
+				C5CFAC04421D28E130F3C49D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +321,7 @@
 			files = (
 				A037029A1E0E77A300B0A249 /* LaunchScreen.storyboard in Resources */,
 				A03702971E0E77A300B0A249 /* Assets.xcassets in Resources */,
+				A02E5C8B1E13D91D00B41327 /* SocialNetworks.plist in Resources */,
 				A03702951E0E77A300B0A249 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,15 +342,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0007EA9171E700CBF75B8AE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialStorageTests/Pods-SocialStorageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D1AE83873BF06FB027D7ED4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialStorageUITests/Pods-SocialStorageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46D79E40ED8B681890C32E24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		585FA5E9D034CC70A651079E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialStorage/Pods-SocialStorage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C779F2AE3DD0CF0CDE92BBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialStorageTests/Pods-SocialStorageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88C67FC9D2168011BDC19A57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B03433F7C1A04D1CCA53447B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5CFAC04421D28E130F3C49D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialStorageUITests/Pods-SocialStorageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBB47F081230D9064D5CD24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialStorage/Pods-SocialStorage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A03702801E0E77A300B0A249 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03702921E0E77A300B0A249 /* YKSocialNetworkList.m in Sources */,
 				A037028C1E0E77A300B0A249 /* YKAppDelegate.m in Sources */,
-				A037028F1E0E77A300B0A249 /* YKSocialNetworkPicker.m in Sources */,
 				A03702891E0E77A300B0A249 /* main.m in Sources */,
+				A02E5C871E13D68800B41327 /* YKSocialNetworkPickerViewController.m in Sources */,
+				A02E5C861E13D68800B41327 /* YKSocialNetworkListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +635,7 @@
 		};
 		A03702B51E0E77A300B0A249 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B98849F65EDEA23922A9635 /* Pods-SocialStorage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SocialStorage/Info.plist;
@@ -439,6 +647,7 @@
 		};
 		A03702B61E0E77A300B0A249 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A5079B249C6C57F04899B45 /* Pods-SocialStorage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SocialStorage/Info.plist;
@@ -450,6 +659,7 @@
 		};
 		A03702B81E0E77A300B0A249 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B8B2F3175C59E39EEB4131E /* Pods-SocialStorageTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SocialStorageTests/Info.plist;
@@ -462,6 +672,7 @@
 		};
 		A03702B91E0E77A300B0A249 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2678669AF501D85E336B9F11 /* Pods-SocialStorageTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SocialStorageTests/Info.plist;
@@ -474,6 +685,7 @@
 		};
 		A03702BB1E0E77A300B0A249 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6BC195851DDF48ACB43088A /* Pods-SocialStorageUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SocialStorageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -485,6 +697,7 @@
 		};
 		A03702BC1E0E77A300B0A249 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355128658032E90388BCC87C /* Pods-SocialStorageUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SocialStorageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -513,6 +726,7 @@
 				A03702B61E0E77A300B0A249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A03702B71E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorageTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +735,7 @@
 				A03702B91E0E77A300B0A249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A03702BA1E0E77A300B0A249 /* Build configuration list for PBXNativeTarget "SocialStorageUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +744,7 @@
 				A03702BC1E0E77A300B0A249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

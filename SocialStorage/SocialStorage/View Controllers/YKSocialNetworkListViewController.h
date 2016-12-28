@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  YKSocialNetworkListViewController.h
 //  SocialStorage
 //
 //  Created by Yevhen Kharytonenko on 12/24/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YKSocialNetworkList : UIViewController
+@interface YKSocialNetworkListViewController : UIViewController
 
 
 @end
