@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '26E9CF17610512554253E308E8F52B53'
+               BlueprintIdentifier = '5556D86EBC4332E0CA4174062835333F'
                BlueprintName = 'Pods-SocialStorage'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-SocialStorage.a'>

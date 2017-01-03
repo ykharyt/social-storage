@@ -8,6 +8,7 @@ target 'SocialStorage' do
   pod 'InstagramKit'
   pod 'FBSDKCoreKit'
   pod 'VK-ios-sdk'
+  pod 'FontAwesomeKit'
 
   # Pods for SocialStorage
 

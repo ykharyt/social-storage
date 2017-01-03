@@ -75,10 +75,18 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "FBSDKCoreKit/FacebookSDKStrings.bundle"
+  install_resource "FontAwesomeKit/FontAwesomeKit/FontAwesome.otf"
+  install_resource "FontAwesomeKit/FontAwesomeKit/foundation-icons.ttf"
+  install_resource "FontAwesomeKit/FontAwesomeKit/ionicons.ttf"
+  install_resource "FontAwesomeKit/FontAwesomeKit/zocial-regular-webfont.ttf"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/VK-ios-sdk/VKSdkResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "FBSDKCoreKit/FacebookSDKStrings.bundle"
+  install_resource "FontAwesomeKit/FontAwesomeKit/FontAwesome.otf"
+  install_resource "FontAwesomeKit/FontAwesomeKit/foundation-icons.ttf"
+  install_resource "FontAwesomeKit/FontAwesomeKit/ionicons.ttf"
+  install_resource "FontAwesomeKit/FontAwesomeKit/zocial-regular-webfont.ttf"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/VK-ios-sdk/VKSdkResources.bundle"
 fi
 

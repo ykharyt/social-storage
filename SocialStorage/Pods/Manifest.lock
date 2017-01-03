@@ -22,6 +22,21 @@ PODS:
   - Bolts/Tasks (1.8.4)
   - FBSDKCoreKit (4.18.0):
     - Bolts (~> 1.7)
+  - FontAwesomeKit (2.2.0):
+    - FontAwesomeKit/Core (= 2.2.0)
+    - FontAwesomeKit/FontAwesome (= 2.2.0)
+    - FontAwesomeKit/FoundationIcons (= 2.2.0)
+    - FontAwesomeKit/IonIcons (= 2.2.0)
+    - FontAwesomeKit/Zocial (= 2.2.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
   - InstagramKit (3.8):
     - AFNetworking (~> 3.0)
     - InstagramKit/Exclude-UICKeyChainStore (= 3.8)
@@ -32,6 +47,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FBSDKCoreKit
+  - FontAwesomeKit
   - InstagramKit
   - VK-ios-sdk
 
@@ -39,9 +55,10 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   InstagramKit: 402d6bba375357b548039de08eea19a1b8716354
   VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
 
-PODFILE CHECKSUM: e0ef0d092732abb1ddda26161645ab578de8f9a0
+PODFILE CHECKSUM: ad024613c84ef91d53dfc55fa7a3ba64c99e74da
 
 COCOAPODS: 1.1.1
