@@ -7,6 +7,7 @@
 //
 
 #import "YKSocialNetworkAuthorizationManager.h"
+#import "InstagramEngine.h"
 
 @implementation YKSocialNetworkAuthorizationManager
 
@@ -23,6 +24,21 @@
 - (void)authorize:(BOOL)authorize forSocialNetworkName:(YKSocialNetworkName)socialNetworkName
   complitionBlock:(void (^)(BOOL, NSError *))complitionBlock
 {
+    switch (socialNetworkName) {
+        case YKSocialNetworkNameInstagram: {
+            
+
+            
+            break;
+        }
+            
+            
+        default:
+            break;
+    }
+    
+    
+    
     complitionBlock(YES,nil);
 }
 

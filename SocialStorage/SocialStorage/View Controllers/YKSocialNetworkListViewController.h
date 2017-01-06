@@ -13,8 +13,6 @@
 @property (strong, nonatomic) IBOutletCollection(UISwitch) NSArray *switchers;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *statusImages;
 
-- (IBAction)facebookSwitchAction:(id)sender;
-- (IBAction)instagramSwitchAction:(id)sender;
-- (IBAction)vkSwitchAction:(id)sender;
+- (IBAction)switchAction:(id)sender;
 
 @end

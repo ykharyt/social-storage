@@ -7,76 +7,82 @@
 //
 
 #import "YKSocialNetworkListViewController.h"
-#import "YKSocialNetworkAuthorizationManager.h"
+#import "FAKFontAwesome.h"
+#import "YKSocialNetworkConstants.h"
+#import "YKSocialNetworkLoginViewController.h"
+
+static NSString * const YKShowLoginSegueIdentifier = @"YKShowLoginSegueIdentifier";
+
+static NSUInteger const YKFacebookSwitchTag = 0;
+static NSUInteger const YKInstagramSwitchTag = 1;
+static NSUInteger const YKVKSwitchTag = 2;
+
+@interface YKSocialNetworkListViewController ()
+@end
 
 @implementation YKSocialNetworkListViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupBrandImages];
+    
+    // TODO: check login statuses
 }
 
 #pragma mark - Actions
 
-- (IBAction)facebookSwitchAction:(UISwitch *)sender
+- (IBAction)switchAction:(UISwitch *)sender
 {
-    [[YKSocialNetworkAuthorizationManager sharedManager] authorize:sender.on
-                                              forSocialNetworkName:YKSocialNetworkNameFacebook
-                                                   complitionBlock:^(BOOL success, NSError *error) {
-                                                       [self updateUIForSocialNetwork:YKSocialNetworkNameFacebook
-                                                                              success:success];
-                                                   }];
+    if (sender.on) {
+       [self performSegueWithIdentifier:YKShowLoginSegueIdentifier
+                                 sender:sender];
+    } else {
+        // TODO: logout
+    }
 }
 
-- (IBAction)instagramSwitchAction:(UISwitch *)sender
-{
-    [[YKSocialNetworkAuthorizationManager sharedManager] authorize:sender.on
-                                              forSocialNetworkName:YKSocialNetworkNameInstagram
-                                                   complitionBlock:^(BOOL success, NSError *error) {
-                                                       [self updateUIForSocialNetwork:YKSocialNetworkNameInstagram
-                                                                              success:success];
-                                                   }];
-}
+#pragma mark - Navigation
 
-- (IBAction)vkSwitchAction:(UISwitch *)sender
-{
-    [[YKSocialNetworkAuthorizationManager sharedManager] authorize:sender.on
-                                              forSocialNetworkName:YKSocialNetworkNameVK
-                                                   complitionBlock:^(BOOL success, NSError *error) {
-                                                       [self updateUIForSocialNetwork:YKSocialNetworkNameVK
-                                                                              success:success];
-                                                   }];
-}
 
-#pragma mark -
-
-- (void)updateUIForSocialNetwork:(YKSocialNetworkName)networkName success:(BOOL)success
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender
 {
-    UIImage * imageForStatus = success ? [UIImage imageNamed:@"LoggedInStatusImage"] : [UIImage imageNamed:@"LoggedOutStatusImage"];
-    
-    switch (networkName) {
-        case YKSocialNetworkNameFacebook: {
-            [[self.switchers firstObject] setOn:success];
-            [[self.statusImages firstObject] setImage:imageForStatus
-                                             forState:UIControlStateNormal];
-            break;
-        }
-        case YKSocialNetworkNameInstagram: {
-            [self.switchers[1] setOn:success];
-            [self.statusImages[1] setImage:imageForStatus
-                                  forState:UIControlStateNormal];
-            break;
-        }
-        case YKSocialNetworkNameVK: {
-            [self.switchers[2] setOn:success];
-            [self.statusImages[2] setImage:imageForStatus
-                                  forState:UIControlStateNormal];
-            break;
-        }
-        default: {
-            break;
+    if ([segue.identifier isEqualToString:YKShowLoginSegueIdentifier] &&
+        [sender isKindOfClass:[UISwitch class]]) {
+        
+        YKSocialNetworkLoginViewController * loginViewController = [segue destinationViewController];
+        
+        switch ([(UISwitch *)sender tag]) {
+            case YKFacebookSwitchTag: {
+                loginViewController.networkName = YKSocialNetworkNameFacebook;
+                break;
+            }
+            case YKInstagramSwitchTag: {
+                loginViewController.networkName = YKSocialNetworkNameInstagram;
+                break;
+            }
+            case YKVKSwitchTag: {
+                loginViewController.networkName = YKSocialNetworkNameVK;
+                break;
+            }
+            default: {
+                break;
+            }
         }
     }
+}
+
+#pragma mark - etc
+
+- (void)setupBrandImages
+{
+    [self.statusImages[0] setImage:[[FAKFontAwesome facebookIconWithSize:14.0f]
+                                    imageWithSize:CGSizeMake(40,40)]];
+    [self.statusImages[1] setImage:[[FAKFontAwesome instagramIconWithSize:14.0f]
+                                    imageWithSize:CGSizeMake(40,40)]];
+    [self.statusImages[2] setImage:[[FAKFontAwesome vkIconWithSize:14.0f]
+                                    imageWithSize:CGSizeMake(40,40)]];
 }
 
 @end
