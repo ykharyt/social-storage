@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4429968211CCCF8F1E5DF9E1 /* libPods-SocialStorageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */; };
 		A02E5C861E13D68800B41327 /* YKSocialNetworkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E5C831E13D68800B41327 /* YKSocialNetworkListViewController.m */; };
-		A02E5C871E13D68800B41327 /* YKSocialNetworkPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E5C851E13D68800B41327 /* YKSocialNetworkPickerViewController.m */; };
 		A02E5C8B1E13D91D00B41327 /* SocialNetworks.plist in Resources */ = {isa = PBXBuildFile; fileRef = A02E5C8A1E13D91D00B41327 /* SocialNetworks.plist */; };
 		A03702891E0E77A300B0A249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702881E0E77A300B0A249 /* main.m */; };
 		A037028C1E0E77A300B0A249 /* YKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A037028B1E0E77A300B0A249 /* YKAppDelegate.m */; };
@@ -20,6 +19,8 @@
 		A03702B01E0E77A300B0A249 /* SocialStorageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702AF1E0E77A300B0A249 /* SocialStorageUITests.m */; };
 		A055ADEC1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A055ADEB1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m */; };
 		A06E690A1E1FA51100E78931 /* YKSocialNetworkLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E69091E1FA51100E78931 /* YKSocialNetworkLoginViewController.m */; };
+		A0CD06F21E589E48000C637A /* YKSocialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD06F11E589E48000C637A /* YKSocialContentViewController.m */; };
+		A0CD06F51E589F4C000C637A /* YKSocialContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD06F41E589F4C000C637A /* YKSocialContentTableViewCell.m */; };
 		A9D7BD3497A9EEF146BBB9AA /* libPods-SocialStorageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2A30C42ED6F788EEA51C16 /* libPods-SocialStorageTests.a */; };
 		F9A41E4ABB4220A2107AB508 /* libPods-SocialStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C6FF4B96A5CE0D942B3D04 /* libPods-SocialStorage.a */; };
 /* End PBXBuildFile section */
@@ -51,8 +52,6 @@
 		7B98849F65EDEA23922A9635 /* Pods-SocialStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorage/Pods-SocialStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		A02E5C821E13D68800B41327 /* YKSocialNetworkListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkListViewController.h; path = "View Controllers/YKSocialNetworkListViewController.h"; sourceTree = "<group>"; };
 		A02E5C831E13D68800B41327 /* YKSocialNetworkListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkListViewController.m; path = "View Controllers/YKSocialNetworkListViewController.m"; sourceTree = "<group>"; };
-		A02E5C841E13D68800B41327 /* YKSocialNetworkPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkPickerViewController.h; path = "View Controllers/YKSocialNetworkPickerViewController.h"; sourceTree = "<group>"; };
-		A02E5C851E13D68800B41327 /* YKSocialNetworkPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkPickerViewController.m; path = "View Controllers/YKSocialNetworkPickerViewController.m"; sourceTree = "<group>"; };
 		A02E5C8A1E13D91D00B41327 /* SocialNetworks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SocialNetworks.plist; sourceTree = "<group>"; };
 		A03702841E0E77A300B0A249 /* SocialStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03702881E0E77A300B0A249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +72,10 @@
 		A055ADEB1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkAuthorizationManager.m; path = Managers/YKSocialNetworkAuthorizationManager.m; sourceTree = "<group>"; };
 		A06E69081E1FA51100E78931 /* YKSocialNetworkLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkLoginViewController.h; path = "View Controllers/YKSocialNetworkLoginViewController.h"; sourceTree = "<group>"; };
 		A06E69091E1FA51100E78931 /* YKSocialNetworkLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkLoginViewController.m; path = "View Controllers/YKSocialNetworkLoginViewController.m"; sourceTree = "<group>"; };
+		A0CD06F01E589E48000C637A /* YKSocialContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialContentViewController.h; path = "View Controllers/YKSocialContentViewController.h"; sourceTree = "<group>"; };
+		A0CD06F11E589E48000C637A /* YKSocialContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialContentViewController.m; path = "View Controllers/YKSocialContentViewController.m"; sourceTree = "<group>"; };
+		A0CD06F31E589F4C000C637A /* YKSocialContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialContentTableViewCell.h; path = Cells/YKSocialContentTableViewCell.h; sourceTree = "<group>"; };
+		A0CD06F41E589F4C000C637A /* YKSocialContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialContentTableViewCell.m; path = Cells/YKSocialContentTableViewCell.m; sourceTree = "<group>"; };
 		A6BC195851DDF48ACB43088A /* Pods-SocialStorageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageUITests/Pods-SocialStorageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,10 +136,10 @@
 			children = (
 				A02E5C821E13D68800B41327 /* YKSocialNetworkListViewController.h */,
 				A02E5C831E13D68800B41327 /* YKSocialNetworkListViewController.m */,
-				A02E5C841E13D68800B41327 /* YKSocialNetworkPickerViewController.h */,
-				A02E5C851E13D68800B41327 /* YKSocialNetworkPickerViewController.m */,
 				A06E69081E1FA51100E78931 /* YKSocialNetworkLoginViewController.h */,
 				A06E69091E1FA51100E78931 /* YKSocialNetworkLoginViewController.m */,
+				A0CD06F01E589E48000C637A /* YKSocialContentViewController.h */,
+				A0CD06F11E589E48000C637A /* YKSocialContentViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				A055ADE51E1BAC62009B7607 /* Managers */,
 				A055ADE41E1BAC57009B7607 /* Constants */,
 				A02E5C881E13D6A100B41327 /* Data Models */,
+				A0CD06F61E589F90000C637A /* Cells */,
 				A02E5C811E13D66F00B41327 /* View Controllers */,
 				A03702931E0E77A300B0A249 /* Main.storyboard */,
 				A03702961E0E77A300B0A249 /* Assets.xcassets */,
@@ -230,6 +234,15 @@
 				A055ADEB1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		A0CD06F61E589F90000C637A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A0CD06F31E589F4C000C637A /* YKSocialContentTableViewCell.h */,
+				A0CD06F41E589F4C000C637A /* YKSocialContentTableViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,10 +528,11 @@
 			files = (
 				A037028C1E0E77A300B0A249 /* YKAppDelegate.m in Sources */,
 				A03702891E0E77A300B0A249 /* main.m in Sources */,
-				A02E5C871E13D68800B41327 /* YKSocialNetworkPickerViewController.m in Sources */,
+				A0CD06F21E589E48000C637A /* YKSocialContentViewController.m in Sources */,
 				A055ADEC1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m in Sources */,
 				A06E690A1E1FA51100E78931 /* YKSocialNetworkLoginViewController.m in Sources */,
 				A02E5C861E13D68800B41327 /* YKSocialNetworkListViewController.m in Sources */,
+				A0CD06F51E589F4C000C637A /* YKSocialContentTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

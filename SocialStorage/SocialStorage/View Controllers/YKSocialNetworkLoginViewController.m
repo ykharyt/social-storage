@@ -31,7 +31,8 @@
 
 #pragma mark - Navigation
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
@@ -43,7 +44,8 @@
  navigationType:(UIWebViewNavigationType)navigationType
 {
     NSError * error = nil;
-    if ([[InstagramEngine sharedEngine] receivedValidAccessTokenFromURL:request.URL error:&error]) {
+    if ([[InstagramEngine sharedEngine] receivedValidAccessTokenFromURL:request.URL
+                                                                  error:&error]) {
         [self authenticationSuccess];
     }
     return YES;
