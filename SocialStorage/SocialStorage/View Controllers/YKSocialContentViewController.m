@@ -8,11 +8,12 @@
 
 #import "YKSocialContentViewController.h"
 #import "YKSocialContentTableViewCell.h"
+#import "YKSocialContentBuilder.h"
 
 static NSString * YKSocialContentTableViewCellIdentifier = @"YKSocialContentTableViewCell";
 
 @interface YKSocialContentViewController ()
-
+@property (nonatomic,strong) NSArray * content;
 @end
 
 @implementation YKSocialContentViewController
@@ -22,19 +23,40 @@ static NSString * YKSocialContentTableViewCellIdentifier = @"YKSocialContentTabl
     [super viewDidLoad];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [YKSocialContentBuilder availablePhotosFromInstagram:^(NSError *error, NSArray<YKPhoto *> *photos) {
+        self.content = photos;
+        [self.tableView reloadData];
+    }];
+    
+//    [[InstagramEngine sharedEngine] getSelfUserDetailsWithSuccess:^(InstagramUser * _Nonnull user) {
+//        
+//    } failure:^(NSError * _Nonnull error, NSInteger serverStatusCode) {
+//        NSLog(@"Error : %@",[error description]);
+//    }];
+
+
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    YKPhoto * photo = (YKPhoto *)self.content[indexPath.row];
+    
     YKSocialContentTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:YKSocialContentTableViewCellIdentifier
                                                                           forIndexPath:indexPath];
-    cell.imageName.text = @"test";
+    cell.imageName.text = photo.imageName;
+    cell.imageView.image = photo.imageInStandartResolution;
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.content.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

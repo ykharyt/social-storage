@@ -24,7 +24,7 @@
     [self.navigationItem.rightBarButtonItem setEnabled:NO];
     
     if (self.networkName == YKSocialNetworkNameInstagram) {
-        NSURL *authURL = [[InstagramEngine sharedEngine] authorizationURL];
+        NSURL *authURL = [[InstagramEngine sharedEngine] authorizationURLForScope:InstagramKitLoginScopeBasic | InstagramKitLoginScopePublicContent];
         [self.webView loadRequest:[NSURLRequest requestWithURL:authURL]];
     }
 }

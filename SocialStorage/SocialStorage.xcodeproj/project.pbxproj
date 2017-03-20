@@ -18,6 +18,8 @@
 		A03702A51E0E77A300B0A249 /* SocialStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702A41E0E77A300B0A249 /* SocialStorageTests.m */; };
 		A03702B01E0E77A300B0A249 /* SocialStorageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702AF1E0E77A300B0A249 /* SocialStorageUITests.m */; };
 		A055ADEC1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A055ADEB1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m */; };
+		A06814201E5F867D002A4206 /* YKSocialContentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A068141F1E5F867D002A4206 /* YKSocialContentBuilder.m */; };
+		A06814231E5F86AD002A4206 /* YKPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A06814221E5F86AD002A4206 /* YKPhoto.m */; };
 		A06E690A1E1FA51100E78931 /* YKSocialNetworkLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E69091E1FA51100E78931 /* YKSocialNetworkLoginViewController.m */; };
 		A0CD06F21E589E48000C637A /* YKSocialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD06F11E589E48000C637A /* YKSocialContentViewController.m */; };
 		A0CD06F51E589F4C000C637A /* YKSocialContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD06F41E589F4C000C637A /* YKSocialContentTableViewCell.m */; };
@@ -70,6 +72,10 @@
 		A055ADE61E1BAC97009B7607 /* YKSocialNetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkConstants.h; path = Constants/YKSocialNetworkConstants.h; sourceTree = "<group>"; };
 		A055ADEA1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkAuthorizationManager.h; path = Managers/YKSocialNetworkAuthorizationManager.h; sourceTree = "<group>"; };
 		A055ADEB1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkAuthorizationManager.m; path = Managers/YKSocialNetworkAuthorizationManager.m; sourceTree = "<group>"; };
+		A068141E1E5F867D002A4206 /* YKSocialContentBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialContentBuilder.h; path = "Data Models/YKSocialContentBuilder.h"; sourceTree = "<group>"; };
+		A068141F1E5F867D002A4206 /* YKSocialContentBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialContentBuilder.m; path = "Data Models/YKSocialContentBuilder.m"; sourceTree = "<group>"; };
+		A06814211E5F86AD002A4206 /* YKPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKPhoto.h; path = "Data Models/YKPhoto.h"; sourceTree = "<group>"; };
+		A06814221E5F86AD002A4206 /* YKPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKPhoto.m; path = "Data Models/YKPhoto.m"; sourceTree = "<group>"; };
 		A06E69081E1FA51100E78931 /* YKSocialNetworkLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkLoginViewController.h; path = "View Controllers/YKSocialNetworkLoginViewController.h"; sourceTree = "<group>"; };
 		A06E69091E1FA51100E78931 /* YKSocialNetworkLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkLoginViewController.m; path = "View Controllers/YKSocialNetworkLoginViewController.m"; sourceTree = "<group>"; };
 		A0CD06F01E589E48000C637A /* YKSocialContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialContentViewController.h; path = "View Controllers/YKSocialContentViewController.h"; sourceTree = "<group>"; };
@@ -147,6 +153,10 @@
 		A02E5C881E13D6A100B41327 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				A06814211E5F86AD002A4206 /* YKPhoto.h */,
+				A06814221E5F86AD002A4206 /* YKPhoto.m */,
+				A068141E1E5F867D002A4206 /* YKSocialContentBuilder.h */,
+				A068141F1E5F867D002A4206 /* YKSocialContentBuilder.m */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -530,6 +540,8 @@
 				A03702891E0E77A300B0A249 /* main.m in Sources */,
 				A0CD06F21E589E48000C637A /* YKSocialContentViewController.m in Sources */,
 				A055ADEC1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m in Sources */,
+				A06814201E5F867D002A4206 /* YKSocialContentBuilder.m in Sources */,
+				A06814231E5F86AD002A4206 /* YKPhoto.m in Sources */,
 				A06E690A1E1FA51100E78931 /* YKSocialNetworkLoginViewController.m in Sources */,
 				A02E5C861E13D68800B41327 /* YKSocialNetworkListViewController.m in Sources */,
 				A0CD06F51E589F4C000C637A /* YKSocialContentTableViewCell.m in Sources */,
