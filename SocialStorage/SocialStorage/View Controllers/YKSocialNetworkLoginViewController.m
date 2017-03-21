@@ -47,6 +47,8 @@
     if ([[InstagramEngine sharedEngine] receivedValidAccessTokenFromURL:request.URL
                                                                   error:&error]) {
         [self authenticationSuccess];
+    } else {
+        NSLog(@"receivedValidAccessTokenFromURL did fail : %@",error.localizedDescription);
     }
     return YES;
 }

@@ -19,22 +19,39 @@
     [[InstagramEngine sharedEngine] getSelfRecentMediaWithSuccess:^(NSArray<InstagramMedia *> * _Nonnull media, InstagramPaginationInfo * _Nonnull paginationInfo) {
         NSMutableArray * photos = [NSMutableArray array];
         for (InstagramMedia * instaMedia in media) {
-            YKPhoto * photo = [YKPhoto new];
-            photo.imageName = instaMedia.caption.text;
-            photo.imageInStandartResolution = [self getImageFromURL:instaMedia.standardResolutionImageURL];
-            [photos addObject:photo];
+            if (![instaMedia isVideo]) {
+                YKPhoto * photo = [YKPhoto new];
+                photo.imageName = instaMedia.caption.text;
+                photo.imageInStandartResolution = [self getImageFromURL:instaMedia.standardResolutionImageURL];
+                [photos addObject:photo];
+            }
         }
         complitionHandler(nil,[photos copy]);
     } failure:^(NSError * _Nonnull error, NSInteger serverStatusCode) {
         complitionHandler(error,nil);
     }];
+}
 
-    [[InstagramEngine sharedEngine] getSelfUserDetailsWithSuccess:^(InstagramUser * _Nonnull user) {
-        
++ (void)availableVideosFromInstagram:(void (^)(NSError * error,NSArray * videos))complitionHandler
+{
+    [[InstagramEngine sharedEngine] getSelfRecentMediaWithSuccess:^(NSArray<InstagramMedia *> * _Nonnull media, InstagramPaginationInfo * _Nonnull paginationInfo) {
+        NSMutableArray * videos = [NSMutableArray array];
+        for (InstagramMedia * instaMedia in media) {
+            if ([instaMedia isVideo]) {
+                
+            }
+        }
+        complitionHandler(nil,[videos copy]);
     } failure:^(NSError * _Nonnull error, NSInteger serverStatusCode) {
-        
+        complitionHandler(error,nil);
     }];
 }
+
+//[[InstagramEngine sharedEngine] getSelfUserDetailsWithSuccess:^(InstagramUser * _Nonnull user) {
+//    
+//} failure:^(NSError * _Nonnull error, NSInteger serverStatusCode) {
+//    
+//}];
 
 #pragma mark - Helpers
 
