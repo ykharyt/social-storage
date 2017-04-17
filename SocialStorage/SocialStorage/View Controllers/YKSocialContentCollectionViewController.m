@@ -9,9 +9,12 @@
 #import "YKSocialContentCollectionViewController.h"
 #import "YKSocialContentBuilder.h"
 #import "YKPhotoCollectionViewCell.h"
+#import "M13ProgressHUD.h"
+#import "M13ProgressViewRing.h"
 
 @interface YKSocialContentCollectionViewController ()
 @property (nonatomic,strong) NSArray * content;
+@property (nonatomic,strong) M13ProgressHUD *hud;
 @end
 
 static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollectionViewHeader";
@@ -30,7 +33,6 @@ static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollect
 //    }];
     
     self.clearsSelectionOnViewWillAppear = NO;
-    
     [self.collectionView registerClass:[UICollectionReusableView class]
             forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                    withReuseIdentifier:YKPhotoCollectionViewHeaderIdentifier];
@@ -39,23 +41,35 @@ static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollect
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    [self setupHUD];
+    [self.hud show:YES];
+
     [YKSocialContentBuilder availablePhotosFromInstagram:^(NSError *error,
                                                            NSArray<YKPhoto *> *photos) {
         self.content = photos;
         [self.collectionView reloadData];
         [self.collectionView performBatchUpdates:nil completion:nil];
+        [self.hud dismiss:YES];
     }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupHUD
+{
+    M13ProgressViewRing * ring = [[M13ProgressViewRing alloc] init];
+    M13ProgressHUD * hud = [[M13ProgressHUD alloc] initWithProgressView:ring];
+    
+    hud.progressViewSize = CGSizeMake(60.0, 60.0);
+    hud.animationPoint = CGPointMake([UIScreen mainScreen].bounds.size.width / 2, [UIScreen mainScreen].bounds.size.height / 2);
+    hud.primaryColor = [UIColor colorWithRed:236/255.0f green:221/255.0f blue:208/255.0f alpha:1];
+    hud.secondaryColor = [UIColor colorWithRed:236/255.0f green:221/255.0f blue:208/255.0f alpha:1];
+    [hud setIndeterminate:YES];
+    hud.status = NSLocalizedString(@"Downloading photos",nil);
+    
+    [self.view addSubview:hud];
+    
+    self.hud = hud;
 }
-*/
 
 #pragma mark <UICollectionViewDataSource>
 

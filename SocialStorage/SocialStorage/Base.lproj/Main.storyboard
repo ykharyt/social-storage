@@ -70,7 +70,7 @@
                                         </label>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.86815900259067358" green="0.86340728015037793" blue="0.74342843350975429" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.8666666666666667" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="aJt-Wp-LZv" secondAttribute="trailing" constant="5" id="AmJ-u4-lnY"/>
                                     <constraint firstItem="aJt-Wp-LZv" firstAttribute="centerX" secondItem="Yv8-0Q-lq7" secondAttribute="centerX" id="OTw-ze-ey1"/>
@@ -359,7 +359,7 @@
                     <tabBarItem key="tabBarItem" title="Videos" badgeValue="+10" id="g7s-Of-qtS"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VXC-6O-HY8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VXC-6O-HY8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

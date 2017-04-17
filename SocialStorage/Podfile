@@ -9,6 +9,7 @@ target 'SocialStorage' do
   pod 'FBSDKCoreKit'
   pod 'VK-ios-sdk'
   pod 'FontAwesomeKit'
+  pod 'M13ProgressSuite'
 
   # Pods for SocialStorage
 
