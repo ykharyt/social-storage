@@ -20,6 +20,8 @@
 		A055ADEC1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A055ADEB1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m */; };
 		A06814201E5F867D002A4206 /* YKSocialContentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A068141F1E5F867D002A4206 /* YKSocialContentBuilder.m */; };
 		A06814231E5F86AD002A4206 /* YKPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A06814221E5F86AD002A4206 /* YKPhoto.m */; };
+		A06A59441EA94BF400B96489 /* UIColor+YKColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A06A59431EA94BF400B96489 /* UIColor+YKColors.m */; };
+		A06A59471EA94D2500B96489 /* UIView+YKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A06A59461EA94D2500B96489 /* UIView+YKProgressHUD.m */; };
 		A06E690A1E1FA51100E78931 /* YKSocialNetworkLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E69091E1FA51100E78931 /* YKSocialNetworkLoginViewController.m */; };
 		A08038691E7FC37F00170221 /* YKSocialContentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08038681E7FC37F00170221 /* YKSocialContentCollectionViewController.m */; };
 		A0CD06F51E589F4C000C637A /* YKPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD06F41E589F4C000C637A /* YKPhotoCollectionViewCell.m */; };
@@ -76,6 +78,10 @@
 		A068141F1E5F867D002A4206 /* YKSocialContentBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialContentBuilder.m; path = "Data Models/YKSocialContentBuilder.m"; sourceTree = "<group>"; };
 		A06814211E5F86AD002A4206 /* YKPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKPhoto.h; path = "Data Models/YKPhoto.h"; sourceTree = "<group>"; };
 		A06814221E5F86AD002A4206 /* YKPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKPhoto.m; path = "Data Models/YKPhoto.m"; sourceTree = "<group>"; };
+		A06A59421EA94BF400B96489 /* UIColor+YKColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+YKColors.h"; path = "Categories/UIColor+YKColors.h"; sourceTree = "<group>"; };
+		A06A59431EA94BF400B96489 /* UIColor+YKColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+YKColors.m"; path = "Categories/UIColor+YKColors.m"; sourceTree = "<group>"; };
+		A06A59451EA94D2500B96489 /* UIView+YKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+YKProgressHUD.h"; path = "Categories/UIView+YKProgressHUD.h"; sourceTree = "<group>"; };
+		A06A59461EA94D2500B96489 /* UIView+YKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+YKProgressHUD.m"; path = "Categories/UIView+YKProgressHUD.m"; sourceTree = "<group>"; };
 		A06E69081E1FA51100E78931 /* YKSocialNetworkLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkLoginViewController.h; path = "View Controllers/YKSocialNetworkLoginViewController.h"; sourceTree = "<group>"; };
 		A06E69091E1FA51100E78931 /* YKSocialNetworkLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialNetworkLoginViewController.m; path = "View Controllers/YKSocialNetworkLoginViewController.m"; sourceTree = "<group>"; };
 		A08038671E7FC37F00170221 /* YKSocialContentCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialContentCollectionViewController.h; path = "View Controllers/YKSocialContentCollectionViewController.h"; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 			children = (
 				A037028A1E0E77A300B0A249 /* YKAppDelegate.h */,
 				A037028B1E0E77A300B0A249 /* YKAppDelegate.m */,
+				A06A59411EA94BB000B96489 /* Categories */,
 				A055ADE51E1BAC62009B7607 /* Managers */,
 				A055ADE41E1BAC57009B7607 /* Constants */,
 				A02E5C881E13D6A100B41327 /* Data Models */,
@@ -244,6 +251,17 @@
 				A055ADEB1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		A06A59411EA94BB000B96489 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A06A59421EA94BF400B96489 /* UIColor+YKColors.h */,
+				A06A59431EA94BF400B96489 /* UIColor+YKColors.m */,
+				A06A59451EA94D2500B96489 /* UIView+YKProgressHUD.h */,
+				A06A59461EA94D2500B96489 /* UIView+YKProgressHUD.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		A0CD06F61E589F90000C637A /* Cells */ = {
@@ -537,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A037028C1E0E77A300B0A249 /* YKAppDelegate.m in Sources */,
+				A06A59471EA94D2500B96489 /* UIView+YKProgressHUD.m in Sources */,
 				A08038691E7FC37F00170221 /* YKSocialContentCollectionViewController.m in Sources */,
 				A03702891E0E77A300B0A249 /* main.m in Sources */,
 				A055ADEC1E1BBBA6009B7607 /* YKSocialNetworkAuthorizationManager.m in Sources */,
@@ -545,6 +564,7 @@
 				A06E690A1E1FA51100E78931 /* YKSocialNetworkLoginViewController.m in Sources */,
 				A02E5C861E13D68800B41327 /* YKSocialNetworkListViewController.m in Sources */,
 				A0CD06F51E589F4C000C637A /* YKPhotoCollectionViewCell.m in Sources */,
+				A06A59441EA94BF400B96489 /* UIColor+YKColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

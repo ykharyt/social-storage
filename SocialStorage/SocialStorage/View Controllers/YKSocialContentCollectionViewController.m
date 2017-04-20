@@ -9,12 +9,12 @@
 #import "YKSocialContentCollectionViewController.h"
 #import "YKSocialContentBuilder.h"
 #import "YKPhotoCollectionViewCell.h"
-#import "M13ProgressHUD.h"
-#import "M13ProgressViewRing.h"
+#import "UIView+YKProgressHUD.h"
+
+#import "InstagramEngine.h"
 
 @interface YKSocialContentCollectionViewController ()
 @property (nonatomic,strong) NSArray * content;
-@property (nonatomic,strong) M13ProgressHUD *hud;
 @end
 
 static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollectionViewHeader";
@@ -26,11 +26,11 @@ static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollect
 {
     [super viewDidLoad];
     
-//    [[InstagramEngine sharedEngine] getSelfUserDetailsWithSuccess:^(InstagramUser * _Nonnull user) {
-//
-//    } failure:^(NSError * _Nonnull error, NSInteger serverStatusCode) {
-//        NSLog(@"Error : %@",[error description]);
-//    }];
+    [[InstagramEngine sharedEngine] getSelfUserDetailsWithSuccess:^(InstagramUser * _Nonnull user) {
+
+    } failure:^(NSError * _Nonnull error, NSInteger serverStatusCode) {
+        NSLog(@"Error : %@",[error description]);
+    }];
     
     self.clearsSelectionOnViewWillAppear = NO;
     [self.collectionView registerClass:[UICollectionReusableView class]
@@ -42,33 +42,38 @@ static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollect
 {
     [super viewDidAppear:animated];
     
-    [self setupHUD];
-    [self.hud show:YES];
+    [self emptyCollectionView];
+    [self updateCollectionView];
+}
 
+#pragma mark - Private methods
+
+- (void)emptyCollectionView
+{
+    self.content = @[];
+    [self.collectionView reloadData];
+    [self.collectionView performBatchUpdates:nil
+                                  completion:nil];
+}
+
+- (void)updateCollectionView
+{
+    [self.view yk_showProgressHUD];
     [YKSocialContentBuilder availablePhotosFromInstagram:^(NSError *error,
                                                            NSArray<YKPhoto *> *photos) {
         self.content = photos;
         [self.collectionView reloadData];
-        [self.collectionView performBatchUpdates:nil completion:nil];
-        [self.hud dismiss:YES];
+        [self.collectionView performBatchUpdates:nil
+                                      completion:^(BOOL finished) {
+                                          [self.view yk_hideProgressHUD];
+                                          [self updateBadge];
+                                      }];
     }];
 }
 
-- (void)setupHUD
+- (void)updateBadge
 {
-    M13ProgressViewRing * ring = [[M13ProgressViewRing alloc] init];
-    M13ProgressHUD * hud = [[M13ProgressHUD alloc] initWithProgressView:ring];
-    
-    hud.progressViewSize = CGSizeMake(60.0, 60.0);
-    hud.animationPoint = CGPointMake([UIScreen mainScreen].bounds.size.width / 2, [UIScreen mainScreen].bounds.size.height / 2);
-    hud.primaryColor = [UIColor colorWithRed:236/255.0f green:221/255.0f blue:208/255.0f alpha:1];
-    hud.secondaryColor = [UIColor colorWithRed:236/255.0f green:221/255.0f blue:208/255.0f alpha:1];
-    [hud setIndeterminate:YES];
-    hud.status = NSLocalizedString(@"Downloading photos",nil);
-    
-    [self.view addSubview:hud];
-    
-    self.hud = hud;
+    [self.navigationController.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%lu",(unsigned long)self.content.count]];
 }
 
 #pragma mark <UICollectionViewDataSource>
