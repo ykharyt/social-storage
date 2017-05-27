@@ -11,7 +11,6 @@
 
 typedef enum : NSUInteger {
     YKSocialNetworkNameFacebook,
-    YKSocialNetworkNameVK,
     YKSocialNetworkNameInstagram,
 } YKSocialNetworkName;
 

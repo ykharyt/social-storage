@@ -15,7 +15,6 @@ static NSString * const YKShowLoginSegueIdentifier = @"YKShowLoginSegueIdentifie
 
 static NSUInteger const YKFacebookSwitchTag = 0;
 static NSUInteger const YKInstagramSwitchTag = 1;
-static NSUInteger const YKVKSwitchTag = 2;
 
 @interface YKSocialNetworkListViewController ()
 @end
@@ -62,10 +61,6 @@ static NSUInteger const YKVKSwitchTag = 2;
                 loginViewController.networkName = YKSocialNetworkNameInstagram;
                 break;
             }
-            case YKVKSwitchTag: {
-                loginViewController.networkName = YKSocialNetworkNameVK;
-                break;
-            }
             default: {
                 break;
             }
@@ -80,8 +75,6 @@ static NSUInteger const YKVKSwitchTag = 2;
     [self.statusImages[0] setImage:[[FAKFontAwesome facebookIconWithSize:14.0f]
                                     imageWithSize:CGSizeMake(40,40)]];
     [self.statusImages[1] setImage:[[FAKFontAwesome instagramIconWithSize:14.0f]
-                                    imageWithSize:CGSizeMake(40,40)]];
-    [self.statusImages[2] setImage:[[FAKFontAwesome vkIconWithSize:14.0f]
                                     imageWithSize:CGSizeMake(40,40)]];
 }
 

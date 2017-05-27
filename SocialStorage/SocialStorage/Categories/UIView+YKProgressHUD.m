@@ -34,16 +34,18 @@ static char progressHUDKey;
         hud.primaryColor = [UIColor yk_pinkColor];
         hud.secondaryColor = [UIColor yk_pinkColor];
         hud.indeterminate = YES;
-        hud.status = NSLocalizedString(@"Downloading photos",nil);
-        
+
         [self yk_setProgressHUD:hud];
     }
     return hud;
 }
 
-- (void)yk_showProgressHUD
+- (void)yk_showProgressHUDWithStatus:(NSString *)status
 {
     self.userInteractionEnabled = NO;
+    
+    M13ProgressHUD * hud = [self yk_progressHUD];
+    hud.status = status;  
     
     [self addSubview:self.yk_progressHUD];
     [self.yk_progressHUD show:YES];

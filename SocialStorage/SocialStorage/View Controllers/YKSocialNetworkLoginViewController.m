@@ -10,9 +10,6 @@
 #import "YKSocialNetworkAuthorizationManager.h"
 #import "InstagramKit.h"
 
-@interface YKSocialNetworkLoginViewController ()
-
-@end
 
 @implementation YKSocialNetworkLoginViewController
 

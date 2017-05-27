@@ -10,6 +10,7 @@
 #import "YKSocialContentBuilder.h"
 #import "YKPhotoCollectionViewCell.h"
 #import "UIView+YKProgressHUD.h"
+#import "UIColor+YKColors.h"
 
 #import "InstagramEngine.h"
 
@@ -18,6 +19,7 @@
 @end
 
 static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollectionViewHeader";
+static NSString * const YKPhotoCollectionViewFooterIdentifier = @"YKPhotoCollectionViewFooter";
 
 @implementation YKSocialContentCollectionViewController
 
@@ -33,9 +35,6 @@ static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollect
     }];
     
     self.clearsSelectionOnViewWillAppear = NO;
-    [self.collectionView registerClass:[UICollectionReusableView class]
-            forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-                   withReuseIdentifier:YKPhotoCollectionViewHeaderIdentifier];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -58,7 +57,7 @@ static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollect
 
 - (void)updateCollectionView
 {
-    [self.view yk_showProgressHUD];
+    [self.view yk_showProgressHUDWithStatus:NSLocalizedString(@"Downloading photos",nil)];
     [YKSocialContentBuilder availablePhotosFromInstagram:^(NSError *error,
                                                            NSArray<YKPhoto *> *photos) {
         self.content = photos;
@@ -73,7 +72,8 @@ static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollect
 
 - (void)updateBadge
 {
-    [self.navigationController.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%lu",(unsigned long)self.content.count]];
+    NSString * badgeValue = self.content.count > 0 ? [NSString stringWithFormat:@"%lu",(unsigned long)self.content.count] : nil;
+    [self.navigationController.tabBarItem setBadgeValue:badgeValue];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -95,6 +95,26 @@ static NSString * const YKPhotoCollectionViewHeaderIdentifier = @"YKPhotoCollect
     return cell;
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
+           viewForSupplementaryElementOfKind:(NSString *)kind
+                                 atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView * reusableview = nil;
+    if (kind == UICollectionElementKindSectionHeader) {
+        UICollectionReusableView * headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                                                                                   withReuseIdentifier:YKPhotoCollectionViewHeaderIdentifier
+                                                                                          forIndexPath:indexPath];
+        reusableview = headerView;
+    }
+    if (kind == UICollectionElementKindSectionFooter) {
+        UICollectionReusableView * footerview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter
+                                                                                   withReuseIdentifier:YKPhotoCollectionViewFooterIdentifier
+                                                                                          forIndexPath:indexPath];
+        reusableview = footerview;
+    }
+    reusableview.backgroundColor = [UIColor yk_pinkColor];
+    return reusableview;
+}
 #pragma mark <UICollectionViewDelegate>
 
 

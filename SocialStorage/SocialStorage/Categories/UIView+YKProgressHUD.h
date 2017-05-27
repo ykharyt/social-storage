@@ -10,7 +10,7 @@
 
 @interface UIView (YKProgressHUD)
 
-- (void)yk_showProgressHUD;
+- (void)yk_showProgressHUDWithStatus:(NSString *)status;
 - (void)yk_hideProgressHUD;
 
 @end

@@ -7,7 +7,6 @@ target 'SocialStorage' do
   pod 'AFNetworking'
   pod 'InstagramKit'
   pod 'FBSDKCoreKit'
-  pod 'VK-ios-sdk'
   pod 'FontAwesomeKit'
   pod 'M13ProgressSuite'
 

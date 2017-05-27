@@ -43,7 +43,6 @@ PODS:
   - InstagramKit/Exclude-UICKeyChainStore (3.8):
     - AFNetworking (~> 3.0)
   - M13ProgressSuite (1.2.9)
-  - VK-ios-sdk (1.4.6)
 
 DEPENDENCIES:
   - AFNetworking
@@ -51,7 +50,6 @@ DEPENDENCIES:
   - FontAwesomeKit
   - InstagramKit
   - M13ProgressSuite
-  - VK-ios-sdk
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -60,8 +58,7 @@ SPEC CHECKSUMS:
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   InstagramKit: 402d6bba375357b548039de08eea19a1b8716354
   M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
-  VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
 
-PODFILE CHECKSUM: 637a51c34eb1a207c85a74b28b537ba13abf04fb
+PODFILE CHECKSUM: d2c8741a2503eae5a765ac20070fd60aac876720
 
 COCOAPODS: 1.1.1

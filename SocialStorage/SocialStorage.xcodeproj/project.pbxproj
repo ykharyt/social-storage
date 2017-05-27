@@ -25,6 +25,7 @@
 		A06E690A1E1FA51100E78931 /* YKSocialNetworkLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06E69091E1FA51100E78931 /* YKSocialNetworkLoginViewController.m */; };
 		A08038691E7FC37F00170221 /* YKSocialContentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08038681E7FC37F00170221 /* YKSocialContentCollectionViewController.m */; };
 		A0CD06F51E589F4C000C637A /* YKPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD06F41E589F4C000C637A /* YKPhotoCollectionViewCell.m */; };
+		A0F4460E1ED95384005457CA /* YKVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F4460D1ED95384005457CA /* YKVideo.m */; };
 		A9D7BD3497A9EEF146BBB9AA /* libPods-SocialStorageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2A30C42ED6F788EEA51C16 /* libPods-SocialStorageTests.a */; };
 		F9A41E4ABB4220A2107AB508 /* libPods-SocialStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C6FF4B96A5CE0D942B3D04 /* libPods-SocialStorage.a */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,8 @@
 		A08038681E7FC37F00170221 /* YKSocialContentCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSocialContentCollectionViewController.m; path = "View Controllers/YKSocialContentCollectionViewController.m"; sourceTree = "<group>"; };
 		A0CD06F31E589F4C000C637A /* YKPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKPhotoCollectionViewCell.h; path = Cells/YKPhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		A0CD06F41E589F4C000C637A /* YKPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKPhotoCollectionViewCell.m; path = Cells/YKPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		A0F4460C1ED95384005457CA /* YKVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKVideo.h; path = "Data Models/YKVideo.h"; sourceTree = "<group>"; };
+		A0F4460D1ED95384005457CA /* YKVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKVideo.m; path = "Data Models/YKVideo.m"; sourceTree = "<group>"; };
 		A6BC195851DDF48ACB43088A /* Pods-SocialStorageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageUITests/Pods-SocialStorageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -161,6 +164,8 @@
 			children = (
 				A06814211E5F86AD002A4206 /* YKPhoto.h */,
 				A06814221E5F86AD002A4206 /* YKPhoto.m */,
+				A0F4460C1ED95384005457CA /* YKVideo.h */,
+				A0F4460D1ED95384005457CA /* YKVideo.m */,
 				A068141E1E5F867D002A4206 /* YKSocialContentBuilder.h */,
 				A068141F1E5F867D002A4206 /* YKSocialContentBuilder.m */,
 			);
@@ -565,6 +570,7 @@
 				A02E5C861E13D68800B41327 /* YKSocialNetworkListViewController.m in Sources */,
 				A0CD06F51E589F4C000C637A /* YKPhotoCollectionViewCell.m in Sources */,
 				A06A59441EA94BF400B96489 /* UIColor+YKColors.m in Sources */,
+				A0F4460E1ED95384005457CA /* YKVideo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

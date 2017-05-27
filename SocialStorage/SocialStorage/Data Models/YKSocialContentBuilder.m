@@ -32,13 +32,16 @@
     }];
 }
 
-+ (void)availableVideosFromInstagram:(void (^)(NSError * error,NSArray * videos))complitionHandler
++ (void)availableVideosFromInstagram:(void (^)(NSError * error,NSArray <YKVideo *>* videos))complitionHandler
 {
     [[InstagramEngine sharedEngine] getSelfRecentMediaWithSuccess:^(NSArray<InstagramMedia *> * _Nonnull media, InstagramPaginationInfo * _Nonnull paginationInfo) {
         NSMutableArray * videos = [NSMutableArray array];
         for (InstagramMedia * instaMedia in media) {
             if ([instaMedia isVideo]) {
+                YKVideo * video = [YKVideo new];
+                video.videoName = instaMedia.caption.text;
                 
+                [videos addObject:video];
             }
         }
         complitionHandler(nil,[videos copy]);
@@ -47,11 +50,15 @@
     }];
 }
 
-//[[InstagramEngine sharedEngine] getSelfUserDetailsWithSuccess:^(InstagramUser * _Nonnull user) {
-//    
-//} failure:^(NSError * _Nonnull error, NSInteger serverStatusCode) {
-//    
-//}];
++ (void)availablePhotosFromFacebook:(void (^)(NSError *, NSArray<YKPhoto *> *))complitionHandler
+{
+    
+}
+
++ (void)availableVideosFromFacebook:(void (^)(NSError *, NSArray<YKVideo *> *))complitionHandler
+{
+    
+}
 
 #pragma mark - Helpers
 

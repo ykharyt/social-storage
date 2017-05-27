@@ -39,8 +39,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LT5-ba-Wed">
                             <size key="itemSize" width="200" height="200"/>
-                            <size key="headerReferenceSize" width="50" height="50"/>
-                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="200" height="50"/>
+                            <size key="footerReferenceSize" width="200" height="50"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
@@ -92,17 +92,24 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4in-24-LUE">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4in-24-LUE">
                                     <rect key="frame" x="125" y="15" width="125" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="125" id="FJq-xt-T7F"/>
+                                        <constraint firstAttribute="height" constant="21" id="upD-P6-Nrf"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" red="0.80214094699395555" green="1" blue="0.90558446905600853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="4in-24-LUE" firstAttribute="centerY" secondItem="xtc-je-Kp4" secondAttribute="centerY" id="qUJ-bD-Rh5"/>
+                                <constraint firstItem="4in-24-LUE" firstAttribute="centerX" secondItem="xtc-je-Kp4" secondAttribute="centerX" id="xTD-6L-zs2"/>
+                            </constraints>
                         </collectionReusableView>
-                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BkS-3F-Lhq">
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="YKPhotoCollectionViewFooter" id="BkS-3F-Lhq">
                             <rect key="frame" x="0.0" y="250" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <color key="backgroundColor" red="0.80214094700000005" green="1" blue="0.90558446910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -155,25 +162,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="irG-sP-8LI">
-                                <rect key="frame" x="285" y="231" width="51" height="31"/>
-                                <connections>
-                                    <action selector="switchAction:" destination="8rJ-Kc-sve" eventType="valueChanged" id="LBn-ZI-NnN"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drM-2o-YB2">
-                                <rect key="frame" x="41" y="226" width="42" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-Tb-8um">
-                                <rect key="frame" x="167" y="226" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="bVx-Vh-dWL"/>
-                                    <constraint firstAttribute="width" constant="40" id="mhC-4r-Inp"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jCg-gd-Hsq">
                                 <rect key="frame" x="167" y="159" width="40" height="40"/>
                                 <constraints>
@@ -214,33 +202,22 @@
                             <constraint firstItem="n8F-Q0-mM8" firstAttribute="centerY" secondItem="jCg-gd-Hsq" secondAttribute="centerY" id="By5-0n-P0R"/>
                             <constraint firstItem="rbY-Ky-XHb" firstAttribute="top" secondItem="vHI-bq-RG6" secondAttribute="bottom" constant="34" id="CTg-Pt-JHw"/>
                             <constraint firstItem="Ye1-bn-G1k" firstAttribute="centerX" secondItem="bJW-bJ-p1o" secondAttribute="centerX" id="CsB-LP-WKt"/>
-                            <constraint firstItem="bJW-bJ-p1o" firstAttribute="centerX" secondItem="RY8-Tb-8um" secondAttribute="centerX" id="Dw5-Mw-wNe"/>
                             <constraint firstItem="jCg-gd-Hsq" firstAttribute="centerY" secondItem="rbY-Ky-XHb" secondAttribute="centerY" id="GBF-bb-v8S"/>
-                            <constraint firstItem="n8F-Q0-mM8" firstAttribute="leading" secondItem="drM-2o-YB2" secondAttribute="leading" id="Ibf-d8-hjY"/>
-                            <constraint firstItem="jCg-gd-Hsq" firstAttribute="leading" secondItem="RY8-Tb-8um" secondAttribute="leading" id="JmD-jJ-THW"/>
-                            <constraint firstItem="rbY-Ky-XHb" firstAttribute="leading" secondItem="irG-sP-8LI" secondAttribute="leading" id="LL4-xq-Sxb"/>
-                            <constraint firstItem="RY8-Tb-8um" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="MPc-jx-o6q"/>
                             <constraint firstItem="vHI-bq-RG6" firstAttribute="leading" secondItem="rbY-Ky-XHb" secondAttribute="leading" id="MmW-bJ-gro"/>
-                            <constraint firstItem="jCg-gd-Hsq" firstAttribute="trailing" secondItem="RY8-Tb-8um" secondAttribute="trailing" id="PBN-ip-P4I"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Ye1-bn-G1k" secondAttribute="bottom" constant="123" id="PGR-zV-vGW"/>
-                            <constraint firstItem="RY8-Tb-8um" firstAttribute="centerY" secondItem="irG-sP-8LI" secondAttribute="centerY" id="PSG-GN-7Mw"/>
                             <constraint firstAttribute="bottom" secondItem="bJW-bJ-p1o" secondAttribute="bottom" constant="211" id="Tda-hB-Pmq"/>
                             <constraint firstItem="jCg-gd-Hsq" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Tvj-Vs-UO0"/>
-                            <constraint firstItem="irG-sP-8LI" firstAttribute="top" secondItem="rbY-Ky-XHb" secondAttribute="bottom" constant="36" id="W77-6q-AfY"/>
-                            <constraint firstItem="drM-2o-YB2" firstAttribute="bottom" secondItem="RY8-Tb-8um" secondAttribute="bottom" id="X0V-xW-nIG"/>
                             <constraint firstItem="xbr-Ky-wU0" firstAttribute="leading" secondItem="jCg-gd-Hsq" secondAttribute="leading" id="Yca-PM-nqH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vHI-bq-RG6" secondAttribute="trailing" constant="25" id="ZQf-z4-yQ7"/>
                             <constraint firstItem="vHI-bq-RG6" firstAttribute="leading" secondItem="xbr-Ky-wU0" secondAttribute="trailing" constant="78" id="ZUE-fj-PIA"/>
                             <constraint firstItem="MXO-EK-Ud6" firstAttribute="leading" secondItem="n8F-Q0-mM8" secondAttribute="leading" id="ZUp-8q-S36"/>
                             <constraint firstItem="n8F-Q0-mM8" firstAttribute="bottom" secondItem="jCg-gd-Hsq" secondAttribute="bottom" id="aUN-NI-74J"/>
-                            <constraint firstItem="RY8-Tb-8um" firstAttribute="leading" secondItem="drM-2o-YB2" secondAttribute="trailing" constant="84" id="ajH-Pq-Gb5"/>
                             <constraint firstItem="xbr-Ky-wU0" firstAttribute="centerY" secondItem="vHI-bq-RG6" secondAttribute="centerY" id="bwQ-hk-DsJ"/>
                             <constraint firstItem="xbr-Ky-wU0" firstAttribute="trailing" secondItem="jCg-gd-Hsq" secondAttribute="trailing" id="dUr-Hb-UjA"/>
                             <constraint firstItem="xbr-Ky-wU0" firstAttribute="leading" secondItem="MXO-EK-Ud6" secondAttribute="trailing" constant="23" id="f9a-70-bDx"/>
                             <constraint firstItem="Ye1-bn-G1k" firstAttribute="top" secondItem="bJW-bJ-p1o" secondAttribute="bottom" constant="18" id="f9x-tf-QH6"/>
                             <constraint firstItem="jCg-gd-Hsq" firstAttribute="leading" secondItem="n8F-Q0-mM8" secondAttribute="trailing" constant="41" id="flo-aJ-shm"/>
                             <constraint firstItem="xbr-Ky-wU0" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="30" id="lV6-RZ-5fI"/>
-                            <constraint firstItem="drM-2o-YB2" firstAttribute="centerY" secondItem="RY8-Tb-8um" secondAttribute="centerY" id="pBP-Ae-KNb"/>
                             <constraint firstItem="Ye1-bn-G1k" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="rep-m8-P1w"/>
                         </constraints>
                     </view>
@@ -249,9 +226,7 @@
                         <outletCollection property="switchers" destination="vHI-bq-RG6" id="GEF-bi-9az"/>
                         <outletCollection property="statusImages" destination="xbr-Ky-wU0" id="xgP-fj-MLw"/>
                         <outletCollection property="switchers" destination="rbY-Ky-XHb" id="005-Ub-mDO"/>
-                        <outletCollection property="switchers" destination="irG-sP-8LI" id="sIr-70-wti"/>
                         <outletCollection property="statusImages" destination="jCg-gd-Hsq" id="Mdw-rx-nQR"/>
-                        <outletCollection property="statusImages" destination="RY8-Tb-8um" id="Ok8-8f-u0q"/>
                         <segue destination="38h-j2-zam" kind="show" identifier="YKShowLoginSegueIdentifier" id="R3u-wf-pr4"/>
                     </connections>
                 </viewController>
