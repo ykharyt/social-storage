@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,19 +33,19 @@
         <scene sceneID="Tdq-ui-G9x">
             <objects>
                 <collectionViewController id="jQN-DY-ne2" customClass="YKSocialContentCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="tgL-7X-yOd">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tgL-7X-yOd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LT5-ba-Wed">
                             <size key="itemSize" width="200" height="200"/>
-                            <size key="headerReferenceSize" width="200" height="50"/>
-                            <size key="footerReferenceSize" width="200" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="YKPhotoCollectionViewCell" id="Y9r-6D-VrB" customClass="YKPhotoCollectionViewCell">
-                                <rect key="frame" x="87.5" y="50" width="200" height="200"/>
+                                <rect key="frame" x="88" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -88,32 +88,6 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="YKPhotoCollectionViewHeader" id="xtc-je-Kp4">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4in-24-LUE">
-                                    <rect key="frame" x="125" y="15" width="125" height="21"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="125" id="FJq-xt-T7F"/>
-                                        <constraint firstAttribute="height" constant="21" id="upD-P6-Nrf"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" red="0.80214094699395555" green="1" blue="0.90558446905600853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <constraints>
-                                <constraint firstItem="4in-24-LUE" firstAttribute="centerY" secondItem="xtc-je-Kp4" secondAttribute="centerY" id="qUJ-bD-Rh5"/>
-                                <constraint firstItem="4in-24-LUE" firstAttribute="centerX" secondItem="xtc-je-Kp4" secondAttribute="centerX" id="xTD-6L-zs2"/>
-                            </constraints>
-                        </collectionReusableView>
-                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="YKPhotoCollectionViewFooter" id="BkS-3F-Lhq">
-                            <rect key="frame" x="0.0" y="250" width="375" height="50"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <color key="backgroundColor" red="0.80214094700000005" green="1" blue="0.90558446910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="jQN-DY-ne2" id="yKA-aO-ZTu"/>
                             <outlet property="delegate" destination="jQN-DY-ne2" id="s6O-KC-bBX"/>
@@ -124,7 +98,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fA-WJ-YhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566" y="-464"/>
+            <point key="canvasLocation" x="1565.5999999999999" y="-464.6176911544228"/>
         </scene>
         <!--Login status-->
         <scene sceneID="wg7-f3-ORb">
@@ -295,7 +269,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jAi-sf-OrQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Login status" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IKO-Gg-hGC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IKO-Gg-hGC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -314,7 +288,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6tX-xD-0eN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Photos" id="1fT-FB-elY"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8Rl-SG-PsU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Rl-SG-PsU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -334,7 +308,7 @@
                     <tabBarItem key="tabBarItem" title="Videos" id="g7s-Of-qtS"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VXC-6O-HY8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VXC-6O-HY8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

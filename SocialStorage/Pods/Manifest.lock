@@ -22,6 +22,7 @@ PODS:
   - Bolts/Tasks (1.8.4)
   - FBSDKCoreKit (4.18.0):
     - Bolts (~> 1.7)
+  - FDKeychain (1.3.0)
   - FontAwesomeKit (2.2.0):
     - FontAwesomeKit/Core (= 2.2.0)
     - FontAwesomeKit/FontAwesome (= 2.2.0)
@@ -47,6 +48,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FBSDKCoreKit
+  - FDKeychain
   - FontAwesomeKit
   - InstagramKit
   - M13ProgressSuite
@@ -55,10 +57,11 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
+  FDKeychain: bd010f28f97ffe7068b3421b77d162b5c2531d61
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   InstagramKit: 402d6bba375357b548039de08eea19a1b8716354
   M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
 
-PODFILE CHECKSUM: d2c8741a2503eae5a765ac20070fd60aac876720
+PODFILE CHECKSUM: 324062e9a499fd335887cda3ecbd1fbe37b3cfcc
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

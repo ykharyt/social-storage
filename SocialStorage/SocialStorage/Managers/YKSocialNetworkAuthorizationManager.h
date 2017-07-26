@@ -6,7 +6,7 @@
 //  Copyright © 2017 Yevhen Kharytonenko. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 #import "YKSocialNetworkConstants.h"
 
 @interface YKSocialNetworkAuthorizationManager : NSObject
@@ -14,6 +14,12 @@
 + (instancetype)sharedManager;
 
 - (void)authorize:(BOOL)authorize forSocialNetworkName:(YKSocialNetworkName)socialNetworkName
-  complitionBlock:(void (^)(BOOL success, NSError * error))complitionBlock;
+        inWebView:(UIWebView *)webView
+  complitionBlock:(void (^)(BOOL, NSError *))complitionBlock;
+
+- (BOOL)receivedValidAccessTokenFromURL:(NSURL *)url forSocialNetwork:(YKSocialNetworkName)socialNetworkName;
+- (NSString *)accessTokenForSocialNetwork:(YKSocialNetworkName)socialNetworkName;
+- (void)saveAccessTokenForSocialNetwork:(YKSocialNetworkName)socialNetworkName;
+- (void)logoutFromSocialNetwork:(YKSocialNetworkName)socialNetworkName;
 
 @end

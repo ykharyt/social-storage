@@ -8,7 +8,6 @@
 
 #import "YKSocialNetworkLoginViewController.h"
 #import "YKSocialNetworkAuthorizationManager.h"
-#import "InstagramKit.h"
 
 
 @implementation YKSocialNetworkLoginViewController
@@ -20,19 +19,12 @@
     self.webView.scrollView.bounces = NO;
     [self.navigationItem.rightBarButtonItem setEnabled:NO];
     
-    if (self.networkName == YKSocialNetworkNameInstagram) {
-        NSURL *authURL = [[InstagramEngine sharedEngine] authorizationURLForScope:InstagramKitLoginScopeBasic | InstagramKitLoginScopePublicContent];
-        [self.webView loadRequest:[NSURLRequest requestWithURL:authURL]];
-    }
-}
-
-#pragma mark - Navigation
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue
-                 sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [[YKSocialNetworkAuthorizationManager sharedManager] authorize:YES
+                                              forSocialNetworkName:self.networkName
+                                                         inWebView:self.webView
+                                                   complitionBlock:^(BOOL success, NSError *error) {
+                                                       
+                                                   }];
 }
 
 #pragma mark - UIWebView delegate methods
@@ -40,37 +32,25 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request
  navigationType:(UIWebViewNavigationType)navigationType
 {
-    NSError * error = nil;
-    if ([[InstagramEngine sharedEngine] receivedValidAccessTokenFromURL:request.URL
-                                                                  error:&error]) {
-        [self authenticationSuccess];
-    } else {
-        NSLog(@"receivedValidAccessTokenFromURL did fail : %@",error.localizedDescription);
+    if ([[YKSocialNetworkAuthorizationManager sharedManager] receivedValidAccessTokenFromURL:request.URL
+                                                                            forSocialNetwork:self.networkName]) {
+        [self handleAuthenticationSuccess];
     }
     return YES;
 }
 
-- (void)webViewDidStartLoad:(UIWebView *)webView
-{
-    
-}
-
-- (void)webViewDidFinishLoad:(UIWebView *)webView
-{
-    
-}
-
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
-{
-    
-}
+- (void)webViewDidStartLoad:(UIWebView *)webView {}
+- (void)webViewDidFinishLoad:(UIWebView *)webView {}
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {}
 
 #pragma mark - etc
 
-- (void)authenticationSuccess
+- (void)handleAuthenticationSuccess
 {
     [self.navigationItem setLeftBarButtonItem:nil];
     [self.navigationItem.rightBarButtonItem setEnabled:YES];
+    
+    [[YKSocialNetworkAuthorizationManager sharedManager] saveAccessTokenForSocialNetwork:self.networkName];
 }
 
 @end

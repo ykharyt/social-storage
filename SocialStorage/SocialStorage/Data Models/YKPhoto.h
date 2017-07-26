@@ -9,5 +9,5 @@
 @import UIKit;
 @interface YKPhoto : NSObject
 @property (nonatomic,strong) NSString * imageName;
-@property (nonatomic,strong) UIImage * imageInStandartResolution;
+@property (nonatomic,strong) UIImage  * imageInStandartResolution;
 @end

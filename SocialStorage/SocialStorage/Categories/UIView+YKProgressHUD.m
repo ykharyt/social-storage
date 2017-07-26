@@ -25,16 +25,13 @@ static char progressHUDKey;
 {
     M13ProgressHUD * hud = objc_getAssociatedObject(self, &progressHUDKey);
     if (!hud) {
-        M13ProgressViewRing * ring = [[M13ProgressViewRing alloc] init];
-        
-        hud = [[M13ProgressHUD alloc] initWithProgressView:ring];
+        hud                  = [[M13ProgressHUD alloc] initWithProgressView:[M13ProgressViewRing new]];
         hud.progressViewSize = CGSizeMake(60.0, 60.0);
-        hud.animationPoint = CGPointMake([UIScreen mainScreen].bounds.size.width/2,
+        hud.animationPoint   = CGPointMake([UIScreen mainScreen].bounds.size.width/2,
                                          [UIScreen mainScreen].bounds.size.height/2);
-        hud.primaryColor = [UIColor yk_pinkColor];
-        hud.secondaryColor = [UIColor yk_pinkColor];
-        hud.indeterminate = YES;
-
+        hud.primaryColor     = [UIColor yk_pinkColor];
+        hud.secondaryColor   = [UIColor yk_pinkColor];
+        hud.indeterminate    = YES;
         [self yk_setProgressHUD:hud];
     }
     return hud;
@@ -43,10 +40,8 @@ static char progressHUDKey;
 - (void)yk_showProgressHUDWithStatus:(NSString *)status
 {
     self.userInteractionEnabled = NO;
-    
-    M13ProgressHUD * hud = [self yk_progressHUD];
-    hud.status = status;  
-    
+    M13ProgressHUD * hud        = [self yk_progressHUD];
+    hud.status                  = status;
     [self addSubview:self.yk_progressHUD];
     [self.yk_progressHUD show:YES];
 }
@@ -55,7 +50,6 @@ static char progressHUDKey;
 {
     [self.yk_progressHUD hide:YES];
     [self yk_setProgressHUD:nil];
-    
     self.userInteractionEnabled = YES;
 }
 

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface YKPhotoCollectionViewCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *image;
-@property (weak, nonatomic) IBOutlet UILabel *imageName;
+@property (weak, nonatomic) IBOutlet UIImageView          *image;
+@property (weak, nonatomic) IBOutlet UILabel              *imageName;
 @end

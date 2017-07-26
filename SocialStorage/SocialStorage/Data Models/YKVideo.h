@@ -9,7 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface YKVideo : NSObject
-
 @property (nonatomic,strong) NSString * videoName;
-
 @end

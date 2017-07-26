@@ -10,8 +10,8 @@
 
 @interface YKSocialNetworkListViewController : UIViewController
 
-@property (strong, nonatomic) IBOutletCollection(UISwitch) NSArray *switchers;
-@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *statusImages;
+@property (strong, nonatomic) IBOutletCollection(UISwitch   ) NSArray          *switchers;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray          *statusImages;
 
 - (IBAction)switchAction:(id)sender;
 

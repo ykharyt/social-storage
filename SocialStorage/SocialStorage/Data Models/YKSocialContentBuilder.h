@@ -18,6 +18,4 @@
 + (void)availablePhotosFromFacebook:(void (^)(NSError * error,NSArray <YKPhoto *>* photos))complitionHandler;
 + (void)availableVideosFromFacebook:(void (^)(NSError * error,NSArray <YKVideo *>* videos))complitionHandler;
 
-
-
 @end

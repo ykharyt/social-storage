@@ -10,6 +10,6 @@
 #import "YKSocialNetworkConstants.h"
 
 @interface YKSocialNetworkLoginViewController : UIViewController <UIWebViewDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
-@property (nonatomic) YKSocialNetworkName networkName;
+@property (weak, nonatomic) IBOutlet UIWebView           *webView;
+@property (nonatomic      ) YKSocialNetworkName networkName;
 @end

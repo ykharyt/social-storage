@@ -87,11 +87,11 @@ static NSString * const YKPhotoCollectionViewFooterIdentifier = @"YKPhotoCollect
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    YKPhoto * photo = (YKPhoto *)self.content[indexPath.row];
+    YKPhoto * photo                 = (YKPhoto *)self.content[indexPath.row];
     YKPhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([YKPhotoCollectionViewCell class])
                                                                                 forIndexPath:indexPath];
-    cell.image.image = photo.imageInStandartResolution;
-    cell.imageName.text = photo.imageName;
+    cell.image.image                = photo.imageInStandartResolution;
+    cell.imageName.text             = photo.imageName;
     return cell;
 }
 

@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4429968211CCCF8F1E5DF9E1 /* libPods-SocialStorageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */; };
+		8B546B1DC4DABFD8ECFDF8AC /* libPods-SocialStorageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2929F30C5B186593CF671F6B /* libPods-SocialStorageUITests.a */; };
+		8F05B37F1CC0C4FFC10B5C67 /* libPods-SocialStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D05D274DB9CC4943005D050 /* libPods-SocialStorage.a */; };
+		95007DD019CEDE4736D61535 /* libPods-SocialStorageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6968B15BD748446C7C37DDB /* libPods-SocialStorageTests.a */; };
 		A02E5C861E13D68800B41327 /* YKSocialNetworkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E5C831E13D68800B41327 /* YKSocialNetworkListViewController.m */; };
 		A02E5C8B1E13D91D00B41327 /* SocialNetworks.plist in Resources */ = {isa = PBXBuildFile; fileRef = A02E5C8A1E13D91D00B41327 /* SocialNetworks.plist */; };
 		A03702891E0E77A300B0A249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03702881E0E77A300B0A249 /* main.m */; };
@@ -26,8 +28,6 @@
 		A08038691E7FC37F00170221 /* YKSocialContentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08038681E7FC37F00170221 /* YKSocialContentCollectionViewController.m */; };
 		A0CD06F51E589F4C000C637A /* YKPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD06F41E589F4C000C637A /* YKPhotoCollectionViewCell.m */; };
 		A0F4460E1ED95384005457CA /* YKVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F4460D1ED95384005457CA /* YKVideo.m */; };
-		A9D7BD3497A9EEF146BBB9AA /* libPods-SocialStorageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2A30C42ED6F788EEA51C16 /* libPods-SocialStorageTests.a */; };
-		F9A41E4ABB4220A2107AB508 /* libPods-SocialStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C6FF4B96A5CE0D942B3D04 /* libPods-SocialStorage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +49,10 @@
 
 /* Begin PBXFileReference section */
 		0A5079B249C6C57F04899B45 /* Pods-SocialStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorage.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorage/Pods-SocialStorage.release.xcconfig"; sourceTree = "<group>"; };
-		20C6FF4B96A5CE0D942B3D04 /* libPods-SocialStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2678669AF501D85E336B9F11 /* Pods-SocialStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageTests/Pods-SocialStorageTests.release.xcconfig"; sourceTree = "<group>"; };
+		2929F30C5B186593CF671F6B /* libPods-SocialStorageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D05D274DB9CC4943005D050 /* libPods-SocialStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		355128658032E90388BCC87C /* Pods-SocialStorageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageUITests/Pods-SocialStorageUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6B2A30C42ED6F788EEA51C16 /* libPods-SocialStorageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8B2F3175C59E39EEB4131E /* Pods-SocialStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageTests/Pods-SocialStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B98849F65EDEA23922A9635 /* Pods-SocialStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorage/Pods-SocialStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		A02E5C821E13D68800B41327 /* YKSocialNetworkListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSocialNetworkListViewController.h; path = "View Controllers/YKSocialNetworkListViewController.h"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		A0F4460C1ED95384005457CA /* YKVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKVideo.h; path = "Data Models/YKVideo.h"; sourceTree = "<group>"; };
 		A0F4460D1ED95384005457CA /* YKVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKVideo.m; path = "Data Models/YKVideo.m"; sourceTree = "<group>"; };
 		A6BC195851DDF48ACB43088A /* Pods-SocialStorageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialStorageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialStorageUITests/Pods-SocialStorageUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6968B15BD748446C7C37DDB /* libPods-SocialStorageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialStorageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A41E4ABB4220A2107AB508 /* libPods-SocialStorage.a in Frameworks */,
+				8F05B37F1CC0C4FFC10B5C67 /* libPods-SocialStorage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D7BD3497A9EEF146BBB9AA /* libPods-SocialStorageTests.a in Frameworks */,
+				95007DD019CEDE4736D61535 /* libPods-SocialStorageTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4429968211CCCF8F1E5DF9E1 /* libPods-SocialStorageUITests.a in Frameworks */,
+				8B546B1DC4DABFD8ECFDF8AC /* libPods-SocialStorageUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,9 +126,9 @@
 		24A50B1615176338A326F6A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20C6FF4B96A5CE0D942B3D04 /* libPods-SocialStorage.a */,
-				6B2A30C42ED6F788EEA51C16 /* libPods-SocialStorageTests.a */,
-				B38514A62F8F9DB635EDF2CB /* libPods-SocialStorageUITests.a */,
+				2D05D274DB9CC4943005D050 /* libPods-SocialStorage.a */,
+				F6968B15BD748446C7C37DDB /* libPods-SocialStorageTests.a */,
+				2929F30C5B186593CF671F6B /* libPods-SocialStorageUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -354,6 +354,7 @@
 				TargetAttributes = {
 					A03702831E0E77A300B0A249 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					A037029F1E0E77A300B0A249 = {
@@ -459,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		585FA5E9D034CC70A651079E /* [CP] Copy Pods Resources */ = {
@@ -504,7 +505,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B03433F7C1A04D1CCA53447B /* [CP] Check Pods Manifest.lock */ = {
@@ -519,7 +520,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C5CFAC04421D28E130F3C49D /* [CP] Copy Pods Resources */ = {
@@ -720,10 +721,14 @@
 			baseConfigurationReference = 7B98849F65EDEA23922A9635 /* Pods-SocialStorage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SocialStorage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YK.SocialStorage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialStorage/SocialStorage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -732,10 +737,13 @@
 			baseConfigurationReference = 0A5079B249C6C57F04899B45 /* Pods-SocialStorage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SocialStorage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YK.SocialStorage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialStorage/SocialStorage-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

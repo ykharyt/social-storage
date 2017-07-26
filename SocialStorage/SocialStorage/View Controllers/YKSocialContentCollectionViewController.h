@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YKSocialContentCollectionViewController : UICollectionViewController <UICollectionViewDelegate,UICollectionViewDataSource>
+@interface YKSocialContentCollectionViewController : UICollectionViewController
+<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @end

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F5C4F1BC9D2C3241C6EBB9074683C725'
-               BlueprintName = 'Pods-SocialStorage'
+               BlueprintIdentifier = '1C91590CDC9B4EFE013F102DF303CC3F'
+               BlueprintName = 'FDKeychain'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-SocialStorage.a'>
+               BuildableName = 'libFDKeychain.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

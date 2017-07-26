@@ -10,11 +10,11 @@
 #import "FAKFontAwesome.h"
 #import "YKSocialNetworkConstants.h"
 #import "YKSocialNetworkLoginViewController.h"
+#import "YKSocialNetworkAuthorizationManager.h"
 
 static NSString * const YKShowLoginSegueIdentifier = @"YKShowLoginSegueIdentifier";
-
-static NSUInteger const YKFacebookSwitchTag = 0;
-static NSUInteger const YKInstagramSwitchTag = 1;
+static NSUInteger const YKFacebookSwitchTag        = 0;
+static NSUInteger const YKInstagramSwitchTag       = 1;
 
 @interface YKSocialNetworkListViewController ()
 @end
@@ -37,7 +37,10 @@ static NSUInteger const YKInstagramSwitchTag = 1;
        [self performSegueWithIdentifier:YKShowLoginSegueIdentifier
                                  sender:sender];
     } else {
-        // TODO: logout
+        // FIXME: logout
+        if (sender.tag == YKInstagramSwitchTag) {
+            [[YKSocialNetworkAuthorizationManager sharedManager] logoutFromSocialNetwork:YKSocialNetworkNameInstagram];
+        }
     }
 }
 
